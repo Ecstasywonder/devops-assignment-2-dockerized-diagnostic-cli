@@ -42,7 +42,7 @@ show_system() {
     printf 'Current User     : %s\n' "$(id -un)"
     printf 'Date/Time        : %s\n' "$(date)"
     printf 'Kernel Version   : %s\n' "$(uname -r)"
-    printf 'Uptime           : %s\n' "$(uptime -p)"
+    printf 'Uptime           : %s\n' "$(uptime -p 2>/dev/null || uptime)"
 
     if [[ -r /etc/os-release ]]; then
         (
