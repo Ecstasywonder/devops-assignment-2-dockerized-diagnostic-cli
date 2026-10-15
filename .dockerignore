@@ -1,0 +1,12 @@
+.git
+.gitignore
+.github
+logs
+*.log
+*.tmp
+*.swp
+.env
+.env.*
+README.md
+grade.sh
+test.sh
