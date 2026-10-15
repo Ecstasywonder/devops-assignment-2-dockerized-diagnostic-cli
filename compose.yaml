@@ -1,0 +1,9 @@
+services:
+  diagnostic:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: assignment2-diagnostic-cli:local
+    entrypoint: ["/opt/diagnostic/diagnostic.sh"]
+    command: ["help"]
+    restart: "no"
