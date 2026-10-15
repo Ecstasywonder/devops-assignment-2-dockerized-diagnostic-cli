@@ -70,8 +70,8 @@ run_test "Invalid command" 2 \
     docker run --rm "$IMAGE" invalid-command
 
 run_test "Missing command" 2 \
-    docker run --rm --entrypoint /opt/diagnostic/diagnostic.sh \
-    "$IMAGE" ""
+    docker run --rm --entrypoint /bin/bash \
+    "$IMAGE" /opt/diagnostic/diagnostic.sh
 
 run_test "Network missing host" 2 \
     docker run --rm "$IMAGE" network
