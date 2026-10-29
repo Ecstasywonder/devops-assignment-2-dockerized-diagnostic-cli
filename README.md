@@ -1,3 +1,28 @@
+<!-- PORTFOLIO_STAR_V1 -->
+# Dockerized Linux Diagnostic CLI
+
+**Portfolio case study — Situation · Task · Action · Result (STAR)**
+
+### Situation
+A Bash diagnostic tool depended on each host's installed packages and environment.
+
+### Task
+Package repeatable diagnostic commands into a container with an executable health check and documented behavior.
+
+### Action
+Built an Alpine-based Docker image, CLI entrypoint, Docker Compose configuration, syntax checks and integration smoke tests covering valid and invalid usage.
+
+### Result
+The repository provides a runnable Docker/Compose diagnostic workflow and test script. No cloud or production deployment is claimed.
+
+**Review the evidence:** [Dockerfile](Dockerfile) · [Integration tests](test.sh)
+
+> **Scope:** Results describe what the repository documents; they are not blanket claims of production readiness. Original/upstream code is credited where applicable.
+
+---
+
+## Detailed project documentation
+
 # DevOps Assignment 2 — Dockerized Diagnostic CLI
 
 ## Overview
